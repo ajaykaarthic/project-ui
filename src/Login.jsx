@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Login = (props) => {
   console.log("reached login");
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -18,14 +18,13 @@ const Login = (props) => {
       });
       if (response.status === 200) {
         console.log(response.data);
-        navigate("/projects"); // Navigate to the projects page
+        navigate("/projects");
       }
     } catch (error) {
       console.error("Error occurred:", error);
     }
   };
   return (
-    // <div>Hello</div>
     <div className="auth-form-container">
       <h2>Login</h2>
       <form className="login-form" onSubmit={handleSubmit}>
