@@ -6,10 +6,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="container">
-        This are the list of projects are available with pagination and sort by
-        category.
-      </div>
+      <div>Under Construction</div>
     </>
   );
 };
